@@ -37,7 +37,7 @@ function palindrome($reps)
 
 <body>
     <form action="" method="post">
-        <input type="number" name="totalAngka" style="width: 150px" placeholder="Total Angka (<?= $min . ' - ' . $max; ?>)" min="<?= $min; ?>" max="<?= $max; ?>">
+        <input type="number" name="totalAngka" style="width: 150px" value="<?= (isset($totalAngka)) ? $totalAngka : ''; ?>" placeholder="Total Angka (<?= $min . ' - ' . $max; ?>)" min="<?= $min; ?>" max="<?= $max; ?>">
         <input type="submit" name="submit" value="Create Palindrome!">
     </form>
     <a href="soal2.php">Soal2</a>

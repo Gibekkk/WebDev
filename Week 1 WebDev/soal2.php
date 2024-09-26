@@ -38,19 +38,19 @@ if (isset($_POST['submit'])) {
         <table>
             <tr>
                 <td><label>Nums1:</label></td>
-                <td><input type="text" pattern="<?= substr($regex, 1, strlen($regex) - 2); ?>" placeholder="Format: [0,1,2,..]" name="nums1" required></td>
+                <td><input type="text" value="<?= (isset($nums1)) ? '[' . implode(",", $nums1) . ']' : ''; ?>" pattern="<?= substr($regex, 1, strlen($regex) - 2); ?>" placeholder="Format: [0,1,2,..]" name="nums1" required></td>
             </tr>
             <tr>
                 <td><label>Nums2:</label></td>
-                <td><input type="text" pattern="<?= substr($regex, 1, strlen($regex) - 2); ?>" placeholder="Format: [0,1,2,..]" name="nums2" required></td>
+                <td><input type="text" value="<?= (isset($nums2)) ? '[' . implode(",", $nums2) . ']' : ''; ?>" pattern="<?= substr($regex, 1, strlen($regex) - 2); ?>" placeholder="Format: [0,1,2,..]" name="nums2" required></td>
             </tr>
             <tr>
                 <td><label>m:</label></td>
-                <td><input type="number" name="m" placeholder="Index for Nums1" required min="<?= $min; ?>" <?= ($max > 0) ? 'max="'.$max.'"' : ''; ?>></td>
+                <td><input type="number" name="m" value="<?= (isset($m)) ? $m : ''; ?>" placeholder="Index for Nums1" required min="<?= $min; ?>" <?= ($max > 0) ? 'max="' . $max . '"' : ''; ?>></td>
             </tr>
             <tr>
                 <td><label>n:</label></td>
-                <td><input type="number" name="n" placeholder="Index for Nums2" required min="<?= $min; ?>" <?= ($max > 0) ? 'max="'.$max.'"' : ''; ?>></td>
+                <td><input type="number" name="n" value="<?= (isset($n)) ? $n : ''; ?>" placeholder="Index for Nums2" required min="<?= $min; ?>" <?= ($max > 0) ? 'max="' . $max . '"' : ''; ?>></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" name="submit" value="Calculate!" style="width: 100%"></td>
