@@ -4,7 +4,7 @@ class functions_arrays
     function greet($student)
     {
         echo 'Hello, ' . $student->name .'<br>';
-    }
+    }  
 }
 include_once "control_flow.php";
 $students = [];
