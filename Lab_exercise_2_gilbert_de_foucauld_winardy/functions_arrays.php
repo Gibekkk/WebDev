@@ -17,7 +17,7 @@ $student2 = new variables("Aryo Karel Merentek", "Male", "01-01-2003", 4.00);
 $student2->display();
 $controlFlow = new control_flow($student2);
 
-$student3 = new variables("Aaron Jevon Benedict Kongdoh", "Male", "05-12-2005", 3.92);
+$student3 = new variables("Aaron Jevon Benedict Kongdoh", "Male", "05-12-2010", 3.92);
 $student3->display();
 $controlFlow = new control_flow($student3);
 
