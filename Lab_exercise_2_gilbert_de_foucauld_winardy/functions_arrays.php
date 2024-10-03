@@ -3,7 +3,7 @@ class functions_arrays
 {
     function greet($student)
     {
-        echo 'Hello, ' . $student->name .'<br>';
+        echo 'Hello, ' . $student->name .'!<br>';
     }  
 }
 include_once "class/Student.php";
