@@ -11,9 +11,9 @@
         }
 
         function getDetails(){
-            $result = 'Title: '.$this->title.'<br>'
-            .'Author: '.$this->author.'<br>'
-            .'Publication Year: '.$this->publicationYear.'<br>';
+            $result = 'Title: '.$this->title.', '
+            .'Author: '.$this->author.', '
+            .'Year: '.$this->publicationYear.', ';
             return $result;
         }
 
