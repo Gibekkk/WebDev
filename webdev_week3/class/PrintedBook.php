@@ -8,7 +8,7 @@ class PrintedBook extends Book{
     }
     function getDetails(){
         $result = parent::getDetails()
-        .'Number of Pages: '.$this->numberOfPages.' Pages';
+        .'Number of Pages:</y> '.$this->numberOfPages.' Pages';
         return $result;
     }
 

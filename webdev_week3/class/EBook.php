@@ -8,7 +8,7 @@ class EBook extends Book{
     }
     function getDetails(){
         $result = parent::getDetails()
-        .'File Size: '.$this->fileSize.' MB';
+        .'File Size:</y> '.$this->fileSize.' MB';
         return $result;
     }
 

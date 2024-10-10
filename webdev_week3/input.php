@@ -1,5 +1,6 @@
 <?php 
 include_once "Setup.php"; 
+if(!(isset($_SESSION['hitung']) && $_SESSION['jumlah'])) header("Location:index.php");
 if (isset($_SESSION['hitung']) && isset($_SESSION['jumlah'])) {
     if ($_SESSION['hitung'] > $_SESSION['jumlah']) {
         header("Location:index.php");

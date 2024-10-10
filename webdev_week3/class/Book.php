@@ -11,9 +11,9 @@
         }
 
         function getDetails(){
-            $result = 'Title: '.$this->title.', '
-            .'Author: '.$this->author.', '
-            .'Year: '.$this->publicationYear.', ';
+            $result = '<y style="color: #e81e61">Title:</y> '.$this->title.', '
+            .'<y style="color: #5295f2">Author:</y> '.$this->author.', '
+            .'<y style="color: #4cb054">Year:</y> '.$this->publicationYear.', <y style="color: #e81e61">';
             return $result;
         }
 
