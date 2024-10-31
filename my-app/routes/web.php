@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/{name?}', function($name="Gilbert"){
-    return view('welcome', ['name'=>$name]);
-});
+// Route::get('/{name?}', function($name="Gilbert"){
+//     return view('welcome', ['name'=>$name]);
+// });
+
+Route::get('/{name?}', [WelcomeController::class, 'show'])->name('welcome');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

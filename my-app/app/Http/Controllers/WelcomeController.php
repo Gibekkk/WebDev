@@ -11,7 +11,7 @@ use Illuminate\View\View;
 
 class WelcomeController extends Controller
 {
-    public function show($name){
+    public function show($name = "Gilbert"){
         return view('welcome', ['name' => $name]);
     }
 }
