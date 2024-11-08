@@ -18,7 +18,7 @@
     </header>
 
     <h1>Daftar <?php echo e($type); ?> 
-        <a href="/books?sort=<?php echo e($sort === 'asc' ? 'desc' : 'asc'); ?>">
+        <a href="/<?php echo e($location); ?>/<?php echo e($sort == 'asc' ? 'desc' : 'asc'); ?>">
             (Change Order)
         </a>
     </h1>

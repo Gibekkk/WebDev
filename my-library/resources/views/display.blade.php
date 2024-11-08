@@ -18,7 +18,7 @@
     </header>
 
     <h1>Daftar {{ $type }} 
-        <a href="/books?sort={{ $sort === 'asc' ? 'desc' : 'asc' }}">
+        <a href="/{{ $location }}/{{ $sort == 'asc' ? 'desc' : 'asc' }}">
             (Change Order)
         </a>
     </h1>
