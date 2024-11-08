@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Books;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class BooksController extends Controller
@@ -15,7 +16,7 @@ class BooksController extends Controller
         if(strtolower($sort) != "desc"){
             $sort = "asc";
         }
-        $books = Books::getQuery()->orderBy('judul', strtolower($sort))->get();
+        $books = DB::select('select * from books order by judul '.strtoupper($sort));
         return view('books', compact('books', 'sort'));
     }
 

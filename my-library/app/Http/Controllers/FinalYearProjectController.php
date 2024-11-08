@@ -2,22 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Journals;
+use App\Models\FinalYearProject;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
-class JournalsController extends Controller
+class FinalYearProjectController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index($sort = "asc")
     {
-        if(strtolower($sort) != "desc"){
+        if (strtolower($sort) != "desc") {
             $sort = "asc";
         }
-        $journals = DB::select('select * from journals order by judul '.strtoupper($sort));
-        return view('journal', compact('journals', 'sort'));
+        $finalYearProjects = DB::select('select * from final_year_projects order by title '.strtoupper($sort));
+        return view('fyps', compact('finalYearProjects', 'sort'));
     }
 
     /**
@@ -39,7 +39,7 @@ class JournalsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Journals $journals)
+    public function show(FinalYearProject $finalYearProject)
     {
         //
     }
@@ -47,7 +47,7 @@ class JournalsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Journals $journals)
+    public function edit(FinalYearProject $finalYearProject)
     {
         //
     }
@@ -55,7 +55,7 @@ class JournalsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Journals $journals)
+    public function update(Request $request, FinalYearProject $finalYearProject)
     {
         //
     }
@@ -63,7 +63,7 @@ class JournalsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Journals $journals)
+    public function destroy(FinalYearProject $finalYearProject)
     {
         //
     }
