@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2024 at 07:56 AM
+-- Generation Time: Nov 08, 2024 at 08:45 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.4
 
@@ -33,7 +33,7 @@ CREATE TABLE `books` (
   `penerbit` varchar(255) NOT NULL,
   `penulis` varchar(255) NOT NULL,
   `tahun_terbit` int(11) NOT NULL,
-  `ISBN` varchar(255) NOT NULL,
+  `isbn` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -42,17 +42,17 @@ CREATE TABLE `books` (
 -- Dumping data for table `books`
 --
 
-INSERT INTO `books` (`id`, `judul`, `penerbit`, `penulis`, `tahun_terbit`, `ISBN`, `created_at`, `updated_at`) VALUES
-(1, 'Enim magnam nobis tempore.', 'PJ Yuliarti Tbk', 'Rudi Radit Saefullah M.Ak', 1996, '9781854991362', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(2, 'Quos voluptas adipisci est magni tenetur vero.', 'CV Pradipta Tbk', 'Vega Ramadan', 1972, '9795606306267', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(3, 'Vel repellat fuga quia officiis.', 'CV Dabukke Pertiwi (Persero) Tbk', 'Rusman Prakasa', 2017, '9782275506166', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(4, 'Et ipsa corporis nulla dicta ad.', 'Fa Usamah Marpaung Tbk', 'Silvia Fitria Wijayanti S.E.', 2021, '9799887553990', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(5, 'Nemo enim est qui.', 'Fa Maryati Rahmawati Tbk', 'Okta Waluyo Sitorus', 2009, '9796424127959', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(6, 'Harum mollitia consectetur nisi.', 'PD Oktaviani Dabukke', 'Prakosa Sihombing', 2023, '9786755119754', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(7, 'Eligendi quod repudiandae id dolor laboriosam assumenda.', 'PJ Halim Kurniawan', 'Taswir Firmansyah', 2006, '9789595596204', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(8, 'Ratione quo sed ut quaerat sit fuga qui.', 'PJ Prabowo', 'Jessica Mandasari', 1997, '9790761078417', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(9, 'Rerum et molestiae aspernatur quis qui aspernatur voluptas.', 'PJ Puspita Siregar', 'Aswani Emil Saptono', 2014, '9789355234445', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(10, 'Voluptas consectetur dolorem voluptate iusto nostrum.', 'Yayasan Hasanah Sirait', 'Oman Widodo', 2018, '9789124159641', '2024-11-07 22:45:31', '2024-11-07 22:45:31');
+INSERT INTO `books` (`id`, `judul`, `penerbit`, `penulis`, `tahun_terbit`, `isbn`, `created_at`, `updated_at`) VALUES
+(1, 'Ullam rerum dolore esse doloremque est.', 'Yayasan Putra (Persero) Tbk', 'Cindy Pratiwi', 1982, '9784149714776', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(2, 'Ut molestias tempora non quia.', 'UD Suryatmi Rahayu', 'Karen Sudiati M.Ak', 1978, '9795624138468', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(3, 'Consequatur maxime voluptas nihil et asperiores.', 'UD Pradipta Manullang (Persero) Tbk', 'Diana Amelia Sudiati S.Pt', 1980, '9796973308328', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(4, 'Magnam facilis doloremque excepturi qui eligendi.', 'PJ Prastuti Agustina', 'Gadang Jindra Wahyudin M.Kom.', 1998, '9798567919446', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(5, 'Sapiente voluptas nam et repellendus sint aut dolorem ut.', 'Yayasan Rahimah Hasanah Tbk', 'Ayu Ophelia Suartini', 2000, '9783476033987', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(6, 'Quae corrupti minima sit mollitia.', 'Yayasan Hariyah Wibowo', 'Malika Rahayu M.TI.', 2012, '9794400487622', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(7, 'Officiis adipisci beatae dicta laudantium itaque consequatur culpa.', 'UD Nasyiah Handayani Tbk', 'Ella Lailasari', 1983, '9793250820894', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(8, 'Mollitia nam laboriosam aut unde qui.', 'PT Hartati Wacana', 'Elvina Melani S.H.', 2010, '9798304085618', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(9, 'Recusandae excepturi consectetur reprehenderit repellendus itaque incidunt quisquam.', 'Yayasan Pranowo Fujiati (Persero) Tbk', 'Karman Enteng Salahudin', 1971, '9786588655535', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(10, 'Sequi vero nihil aut omnis est.', 'Fa Maheswara Padmasari', 'Raisa Pratiwi S.Pt', 2019, '9788844494322', '2024-11-07 23:36:09', '2024-11-07 23:36:09');
 
 -- --------------------------------------------------------
 
@@ -100,16 +100,16 @@ CREATE TABLE `cds` (
 --
 
 INSERT INTO `cds` (`id`, `title`, `artist`, `publisher`, `release_year`, `genre`, `created_at`, `updated_at`) VALUES
-(1, 'Optio inventore autem qui.', 'Daren Quigley', 'Gislason-Mayer', '1995', 'modi', NULL, NULL),
-(2, 'Eum quo.', 'Max Stehr I', 'Kihn, Batz and Nicolas', '2008', 'expedita', NULL, NULL),
-(3, 'Autem vitae facilis.', 'Esther Prohaska', 'Stroman-Mayer', '1987', 'et', NULL, NULL),
-(4, 'Nostrum dolorum nam.', 'Terrence Wiegand', 'Welch-Lesch', '1982', 'qui', NULL, NULL),
-(5, 'Vitae eius omnis recusandae.', 'Liam Koch', 'Blick Group', '1978', 'eveniet', NULL, NULL),
-(6, 'Quaerat sequi voluptatibus aut.', 'Westley Schroeder', 'Pollich, Satterfield and Kshlerin', '1973', 'consequatur', NULL, NULL),
-(7, 'Corporis non eum iusto.', 'Ford Heathcote', 'Schaefer, Kautzer and Gulgowski', '1989', 'illum', NULL, NULL),
-(8, 'Ut odio et pariatur.', 'Ernest Block', 'Zieme, Wisozk and Monahan', '1992', 'commodi', NULL, NULL),
-(9, 'Dolor veniam qui.', 'Elijah Heidenreich', 'Kuvalis LLC', '1972', 'magni', NULL, NULL),
-(10, 'Dolorem autem.', 'Ahmed Tromp', 'Hamill, Hansen and Ferry', '1972', 'fugit', NULL, NULL);
+(1, 'Iste dolor voluptatum unde.', 'Garnett Koepp', 'Crooks Inc', '2023', 'ipsam', NULL, NULL),
+(2, 'Eius facere ut.', 'Emilie Kilback V', 'Stoltenberg, Paucek and Bruen', '2024', 'doloribus', NULL, NULL),
+(3, 'Vero expedita facere.', 'Grady Lehner PhD', 'Upton and Sons', '1983', 'ullam', NULL, NULL),
+(4, 'Repellendus in.', 'Dedrick Witting', 'Heidenreich-Hegmann', '1998', 'molestias', NULL, NULL),
+(5, 'Sed aut sed voluptas.', 'Carolina Gutkowski', 'Quitzon, Fahey and Robel', '2019', 'impedit', NULL, NULL),
+(6, 'Doloremque labore molestiae labore.', 'Madaline Macejkovic', 'Brekke LLC', '2010', 'ut', NULL, NULL),
+(7, 'Cumque cumque recusandae.', 'Angel Hermann', 'Zboncak, Halvorson and Blanda', '2000', 'impedit', NULL, NULL),
+(8, 'Dignissimos ab ut.', 'Landen Gottlieb', 'Hauck-Hettinger', '2020', 'voluptatem', NULL, NULL),
+(9, 'Et ut rem.', 'Jennifer Connelly PhD', 'Botsford and Sons', '2017', 'quam', NULL, NULL),
+(10, 'Ut quia esse molestiae nisi.', 'Prof. Nikko Wolf III', 'Simonis and Sons', '1989', 'sint', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -149,16 +149,16 @@ CREATE TABLE `final_year_projects` (
 --
 
 INSERT INTO `final_year_projects` (`id`, `title`, `student_name`, `supervisor`, `submission_year`, `abstract`, `created_at`, `updated_at`) VALUES
-(1, 'Rem inventore dolores provident aut.', 'Prof. Moshe Hyatt', 'Maybelle Walsh', '2003', 'Dicta aut ut aut accusantium qui et. Et ex eligendi quo culpa molestias. Sit facilis earum sunt perspiciatis et.', NULL, NULL),
-(2, 'Iure at aliquam ullam officia est.', 'Zechariah Hahn V', 'Prof. Alverta Schultz', '2012', 'Voluptatum laudantium consectetur sequi occaecati ipsam est. Qui ut illum consequatur recusandae voluptatem et.', NULL, NULL),
-(3, 'Culpa ut pariatur at et.', 'Leda Stanton', 'Ms. Elissa Rolfson', '1976', 'Nihil sequi odit libero autem enim eius ipsam eius. Voluptatem et labore cupiditate. Eveniet perspiciatis facilis ut possimus.', NULL, NULL),
-(4, 'Rem nihil aut animi quas.', 'Kade Bechtelar', 'Domingo Kuphal', '2011', 'Sit qui totam dicta consequuntur placeat maiores voluptates. Qui in ut quia pariatur maxime numquam. Dolorum odio neque porro et praesentium et.', NULL, NULL),
-(5, 'Tempore quia nulla quia aut et.', 'Keith Funk', 'Madge Heller', '1988', 'Et et minus vitae omnis necessitatibus. Voluptatem culpa aspernatur quasi sed quas voluptatem et. Ad corporis corrupti eligendi excepturi soluta incidunt eum facilis. Fuga at libero animi debitis et. Voluptatum voluptatum ea commodi aut.', NULL, NULL),
-(6, 'Quas expedita corrupti sed numquam nostrum nam.', 'Dejuan Graham', 'Wiley Zulauf', '1977', 'Eum perferendis ipsum animi unde dolorem aut. Eum ex labore quia est est. Fugit autem hic deserunt sapiente. Ut necessitatibus itaque dolorem aut.', NULL, NULL),
-(7, 'Deleniti molestiae nulla omnis.', 'Polly Wyman', 'Ms. Kaelyn Lubowitz', '1972', 'Ea occaecati nam dolores velit. Incidunt rerum nisi beatae optio ullam. Suscipit praesentium ipsam est velit. Non omnis recusandae fugit ullam ea asperiores.', NULL, NULL),
-(8, 'Quaerat et dolore hic impedit accusantium suscipit.', 'Santos Daugherty PhD', 'Ronaldo Bosco', '1981', 'Harum et expedita qui. Eum iusto sint corporis eligendi suscipit alias. Ducimus explicabo consequuntur numquam dolorem placeat rerum aut consectetur. Explicabo consequatur ducimus cupiditate id rerum dolorem.', NULL, NULL),
-(9, 'Autem nisi blanditiis in ut.', 'Mrs. Cynthia Doyle Jr.', 'Felix Gutmann', '1991', 'Ut ea eligendi vel eos qui blanditiis fugit. Id rerum quia esse temporibus dolorum consectetur. Enim qui quas facilis itaque.', NULL, NULL),
-(10, 'Et eius provident dolores.', 'Prof. Chet Abbott Jr.', 'Xander Bartoletti', '1980', 'Excepturi qui officiis numquam cumque. Nobis tenetur qui quam ut et rerum. Et quos atque laborum sunt tempore culpa.', NULL, NULL);
+(1, 'Neque aut aliquid qui sint esse vero.', 'Cecil Wisozk', 'Vern Boehm', '2015', 'Consequuntur vero dicta rerum voluptatum. Unde ut debitis quasi nesciunt. Sit odio voluptatem voluptatem nostrum deserunt. In omnis quidem perferendis doloremque unde.', NULL, NULL),
+(2, 'Illum qui aliquam vitae.', 'Miss Tracy Moen Jr.', 'Mrs. Anastasia Kertzmann V', '1970', 'Aliquid ea harum aperiam voluptates. Laborum id eius dolorem ab. Aut tempora perspiciatis quibusdam voluptatibus iure suscipit illo quam.', NULL, NULL),
+(3, 'Cum labore nobis eum.', 'Ms. June Langworth', 'Prof. Douglas Jacobson', '1979', 'In aut delectus non. Expedita veniam et quisquam sed quis id. Quod sint aliquam et aut id et eius. Exercitationem reiciendis in vel ipsa voluptas quas impedit.', NULL, NULL),
+(4, 'Vero ut suscipit eum.', 'Dina Murray', 'Aglae Hirthe', '2017', 'Laborum non voluptates facere voluptatem ut deleniti. Voluptatem quae commodi inventore quis quasi. Fuga vel fugiat omnis tempore. Ut molestiae et quibusdam voluptatem expedita maiores voluptas.', NULL, NULL),
+(5, 'Suscipit deserunt sequi sit.', 'Rhett Koss I', 'Dr. Elwin Hickle III', '1981', 'Possimus eos et non quo. Ipsum voluptatem vero perferendis natus amet suscipit aliquid. Mollitia commodi et sed facere consequatur aut eum. Nostrum tempore dolorem alias.', NULL, NULL),
+(6, 'Quo at ullam aliquam consequuntur.', 'Audreanne Ferry', 'Alysha Monahan MD', '2020', 'Magni quis maxime excepturi ex dignissimos nobis alias. Maiores eligendi dicta vel voluptas sapiente. Harum atque magnam nihil enim excepturi voluptas consequuntur. Expedita omnis doloribus quas sapiente ad dolore.', NULL, NULL),
+(7, 'Pariatur eveniet ut enim quia.', 'Emily Emard', 'Thad Skiles', '1990', 'Quaerat nam qui illo cumque. Ducimus aut vitae sed qui quae. Mollitia aperiam consequuntur ullam est aliquam voluptas temporibus.', NULL, NULL),
+(8, 'Voluptatibus odit corporis nobis.', 'Yasmeen Waelchi', 'Brannon Watsica', '1991', 'Neque neque aperiam qui praesentium rem officia. Nemo ut velit alias iste quia tenetur deserunt vitae. Non ad animi ipsam sed fugiat autem fugiat. Quod sint dignissimos magni in.', NULL, NULL),
+(9, 'Nostrum iure enim ab.', 'Mr. Hans Ratke', 'Madaline Fritsch', '1983', 'Expedita voluptas sint nemo autem quo. Et quas accusamus consequuntur et distinctio incidunt est. Repudiandae quia optio officia voluptatibus.', NULL, NULL),
+(10, 'Debitis dolor vitae a ducimus.', 'Ms. Addie Jacobson Jr.', 'Rodger O\'Kon', '2007', 'Soluta et eum eaque et. Repellat dolore iusto recusandae blanditiis consequatur.', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -207,7 +207,7 @@ CREATE TABLE `journals` (
   `penerbit` varchar(255) NOT NULL,
   `penulis` varchar(255) NOT NULL,
   `tahun_terbit` int(11) NOT NULL,
-  `ISBN` varchar(255) NOT NULL,
+  `isbn` varchar(255) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -216,17 +216,17 @@ CREATE TABLE `journals` (
 -- Dumping data for table `journals`
 --
 
-INSERT INTO `journals` (`id`, `judul`, `penerbit`, `penulis`, `tahun_terbit`, `ISBN`, `created_at`, `updated_at`) VALUES
-(1, 'Et perspiciatis aut aut dolor blanditiis.', 'Yayasan Hartati', 'Estiawan Nugroho S.IP', 2005, '9789489091259', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(2, 'Totam aspernatur consequatur id voluptatem in aut iste.', 'Fa Nugroho Prayoga', 'Caraka Hutagalung M.TI.', 1986, '9794626526983', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(3, 'Et corrupti perspiciatis quis.', 'Perum Hutasoit Halim', 'Radika Thamrin M.Pd', 1975, '9782467332016', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(4, 'Sit recusandae aut ut libero recusandae provident odio laudantium.', 'Perum Riyanti Saragih', 'Farhunnisa Andriani', 2013, '9787809239541', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(5, 'Repudiandae amet harum aut recusandae at veritatis.', 'CV Puspita Astuti', 'Ihsan Kusumo', 1989, '9782807834637', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(6, 'Officia ea est rerum omnis hic et in.', 'UD Sihombing', 'Warji Thamrin', 1998, '9782343853949', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(7, 'Doloremque vitae quos porro dolores est possimus.', 'Yayasan Yolanda Agustina', 'Lasmono Edi Hutasoit', 2017, '9783213304462', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(8, 'Tenetur ipsum voluptas rem eos quod labore.', 'UD Sitorus Siregar Tbk', 'Damar Situmorang', 2007, '9782554257437', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(9, 'Enim quos quasi atque quia.', 'Fa Kuswandari Safitri (Persero) Tbk', 'Raina Mardhiyah S.T.', 2003, '9799183585589', '2024-11-07 22:45:31', '2024-11-07 22:45:31'),
-(10, 'Aperiam autem eaque id sed fugit qui sed.', 'Perum Yulianti Tbk', 'Sabrina Uyainah', 1971, '9785270126032', '2024-11-07 22:45:31', '2024-11-07 22:45:31');
+INSERT INTO `journals` (`id`, `judul`, `penerbit`, `penulis`, `tahun_terbit`, `isbn`, `created_at`, `updated_at`) VALUES
+(1, 'Fugit veritatis excepturi alias facilis quibusdam nihil dolorem.', 'UD Hasanah Megantara', 'Restu Riyanti', 2011, '9795390179009', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(2, 'Culpa vitae rerum cumque.', 'PJ Simanjuntak Fujiati Tbk', 'Cici Usamah M.Ak', 1996, '9791411702997', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(3, 'Quo praesentium voluptatibus necessitatibus rerum perferendis.', 'Fa Kuswoyo Oktaviani', 'Paramita Yolanda S.IP', 1997, '9793044712558', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(4, 'Id nemo accusamus quis ipsa non veritatis et illo.', 'Perum Wulandari Nurdiyanti (Persero) Tbk', 'Sakura Yuliarti', 1983, '9792223969806', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(5, 'Tenetur nisi unde provident et sed et.', 'Fa Yuliarti (Persero) Tbk', 'Gilda Gabriella Usada M.TI.', 1979, '9787959109084', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(6, 'Provident vel aperiam dolorem nulla aliquid facere.', 'UD Simbolon Purwanti', 'Elma Laksita', 1984, '9784921468552', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(7, 'Reiciendis delectus est cupiditate ratione soluta corrupti laboriosam.', 'PD Hariyah', 'Darimin Bakijan Suryono S.H.', 2018, '9781852972660', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(8, 'Non est nemo minus quasi.', 'UD Jailani Suryono', 'Cemani Hutagalung S.Gz', 1971, '9784867531679', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(9, 'Quam placeat qui porro sit reprehenderit quidem.', 'UD Kusumo', 'Gamani Ikhsan Santoso M.Farm', 1986, '9793846821717', '2024-11-07 23:36:09', '2024-11-07 23:36:09'),
+(10, 'Enim tempora similique unde maxime consequatur voluptatem assumenda dolor.', 'Fa Napitupulu', 'Keisha Vera Laksmiwati', 1983, '9790381218187', '2024-11-07 23:36:09', '2024-11-07 23:36:09');
 
 -- --------------------------------------------------------
 
@@ -275,16 +275,16 @@ CREATE TABLE `newspapers` (
 --
 
 INSERT INTO `newspapers` (`id`, `name`, `publication_date`, `publisher`, `language`, `created_at`, `updated_at`) VALUES
-(1, 'Wuckert, Nienow and Vandervort', '1973-11-08', 'Feeney-Mante', 'da', NULL, NULL),
-(2, 'Schmeler, Moore and Goldner', '2003-07-16', 'Brakus Group', 'rm', NULL, NULL),
-(3, 'Walter-Nikolaus', '1985-07-26', 'Casper Ltd', 've', NULL, NULL),
-(4, 'Bernhard, Kohler and Green', '2012-05-11', 'Bednar, Leannon and Rice', 'ml', NULL, NULL),
-(5, 'Lindgren-Bernier', '2022-01-31', 'O\'Kon and Sons', 'ss', NULL, NULL),
-(6, 'Hickle-Orn', '1988-01-28', 'Miller Ltd', 'lt', NULL, NULL),
-(7, 'Herman Ltd', '1993-11-05', 'Treutel-Wunsch', 'tk', NULL, NULL),
-(8, 'Runte, Heathcote and Wuckert', '1982-07-25', 'Eichmann-Kozey', 'no', NULL, NULL),
-(9, 'King, Jast and Howell', '1975-04-01', 'Medhurst-Walter', 'su', NULL, NULL),
-(10, 'Mertz, Ebert and Bogisich', '1974-07-27', 'Wilderman-Fadel', 'gv', NULL, NULL);
+(1, 'Langworth-Davis', '2009-05-28', 'Eichmann Ltd', 'co', NULL, NULL),
+(2, 'Bergnaum-Kassulke', '1978-08-28', 'Kassulke Ltd', 'ho', NULL, NULL),
+(3, 'Kilback, Douglas and Sawayn', '2009-10-04', 'Renner-Jacobi', 'fr', NULL, NULL),
+(4, 'Mayer, Murray and Stanton', '1989-12-29', 'Emmerich, Bradtke and Gutkowski', 'nb', NULL, NULL),
+(5, 'Predovic, Gusikowski and Goyette', '1984-01-14', 'Green Ltd', 'dz', NULL, NULL),
+(6, 'Dibbert Group', '2013-06-30', 'Donnelly and Sons', 'tg', NULL, NULL),
+(7, 'Funk Ltd', '2020-05-11', 'Bogisich, McKenzie and Kiehn', 'ak', NULL, NULL),
+(8, 'Hagenes Group', '1982-04-13', 'Heidenreich-Zboncak', 'sd', NULL, NULL),
+(9, 'Little-Treutel', '2021-01-15', 'Hand-Hermiston', 'nl', NULL, NULL),
+(10, 'Jones-Eichmann', '1984-05-29', 'Eichmann PLC', 'fi', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -318,7 +318,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('h4CaRKHBT7q0U0aFUXVzJqcPCNiEacluXENlSmUW', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiSGxQMzh2c3ZpZFhSTGFvREJzSE9ab0FyRmpPR0IyUXdEMVVWaUdVWSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9jZHMvYXNjIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1731048983);
+('h4CaRKHBT7q0U0aFUXVzJqcPCNiEacluXENlSmUW', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUWxOVXJhTnNIQ0tSY0J2bTBRRk9IVU5rNXJsRFJDQnRZYk9xdFJtZiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMC9maW5hbF95ZWFyX3Byb2plY3RzL2FzYyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1731051869);
 
 -- --------------------------------------------------------
 
@@ -342,7 +342,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Test User', 'test@example.com', '2024-11-07 22:45:30', '$2y$12$V/7v3mGoVWD53EIiUj5Roe0Rhq7qG1wrGhsy4xp50Zl0Vat5Mq0nC', '8XhO8fa5jE', '2024-11-07 22:45:31', '2024-11-07 22:45:31');
+(1, 'Test User', 'test@example.com', '2024-11-07 23:36:09', '$2y$12$3qRQnRWl1hBrhDlyOPk/0eE97WlAQK7CqZJcpIwO8L/d2h0aogxkK', 'swA07RlZri', '2024-11-07 23:36:09', '2024-11-07 23:36:09');
 
 --
 -- Indexes for dumped tables
@@ -353,7 +353,7 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 --
 ALTER TABLE `books`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `books_isbn_unique` (`ISBN`);
+  ADD UNIQUE KEY `books_isbn_unique` (`isbn`);
 
 --
 -- Indexes for table `cache`
@@ -404,7 +404,7 @@ ALTER TABLE `job_batches`
 --
 ALTER TABLE `journals`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `journals_isbn_unique` (`ISBN`);
+  ADD UNIQUE KEY `journals_isbn_unique` (`isbn`);
 
 --
 -- Indexes for table `migrations`
