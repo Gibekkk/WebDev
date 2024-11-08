@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Faker\Factory as Faker;
 
 class BooksSeeder extends Seeder
 {
@@ -12,6 +13,17 @@ class BooksSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $faker = Faker::create('id_ID');
+        for ($i = 1; $i <= 10; $i++) {
+            DB::table('books')->insert([
+                'judul' => $faker->sentence,
+                'penerbit' => $faker->company,
+                'penulis' => $faker->name,
+                'tahun_terbit' => $faker->year,
+                'ISBN' => $faker->isbn13,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now(),
+            ]);
+        }
     }
 }

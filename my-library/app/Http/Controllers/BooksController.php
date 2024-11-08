@@ -3,18 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\Books;
-use App\Http\Requests\StoreBooksRequest;
-use App\Http\Requests\UpdateBooksRequest;
+use Illuminate\Http\Request;
 
 class BooksController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($sort = "asc")
     {
-        $books = Books::latest()->paginate(10);
-        return view('books.index', ['books' => $books]);
+        if(strtolower($sort) != "desc"){
+            $sort = "asc";
+        }
+        $books = Books::getQuery()->orderBy('judul', strtolower($sort))->get();
+        return view('books', compact('books', 'sort'));
     }
 
     /**
@@ -28,7 +30,7 @@ class BooksController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreBooksRequest $request)
+    public function store(Request $request)
     {
         //
     }
@@ -38,7 +40,7 @@ class BooksController extends Controller
      */
     public function show(Books $books)
     {
-
+        //
     }
 
     /**
@@ -52,7 +54,7 @@ class BooksController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateBooksRequest $request, Books $books)
+    public function update(Request $request, Books $books)
     {
         //
     }
