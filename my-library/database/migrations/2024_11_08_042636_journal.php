@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('penerbit');
             $table->string('penulis');
             $table->integer('tahun_terbit');
-            $table->string('ISBN')->unique();
+            $table->string('isbn')->unique();
             $table->timestamps();
         });
     }

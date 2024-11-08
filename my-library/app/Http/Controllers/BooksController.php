@@ -13,11 +13,20 @@ class BooksController extends Controller
      */
     public function index($sort = "asc")
     {
-        if(strtolower($sort) != "desc"){
+        if (strtolower($sort) != "desc") {
             $sort = "asc";
         }
-        $books = DB::select('select * from books order by judul '.strtoupper($sort));
-        return view('books', compact('books', 'sort'));
+        $type = "Buku";
+        $fields = array(
+            "Judul",
+            "Penerbit",
+            "Penulis",
+            "Tahun Terbit",
+            "ISBN"
+        );
+        $location = "books";
+        $datas = DB::select('select * from books order by judul ' . strtoupper($sort));
+        return view('display', compact('datas', 'sort', 'type', 'fields', 'location'));
     }
 
     /**

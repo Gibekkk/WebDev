@@ -18,6 +18,8 @@ class FinalYearProjectSeeder extends Seeder
                 'supervisor' => $faker->name,
                 'submission_year' => $faker->year,
                 'abstract' => $faker->paragraph(3),
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now(),
             ]);
         }
     }

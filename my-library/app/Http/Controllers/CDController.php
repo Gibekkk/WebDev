@@ -16,8 +16,17 @@ class CDController extends Controller
         if (strtolower($sort) != "desc") {
             $sort = "asc";
         }
-        $cds = DB::select('select * from cds order by title '.strtoupper($sort));
-        return view('cds', compact('cds', 'sort'));
+        $type = "CD";
+        $fields = array(
+            "Title",
+            "Artist",
+            "Publisher",
+            "Release Year",
+            "Genre"
+        );
+        $location = "cds";
+        $datas = DB::select('select * from cds order by title '.strtoupper($sort));
+        return view('display', compact('datas', 'sort', 'type', 'fields', 'location'));
     }
 
     /**

@@ -16,8 +16,16 @@ class NewspaperController extends Controller
         if (strtolower($sort) != "desc") {
             $sort = "asc";
         }
-        $newspapers = DB::select('select * from newspapers order by name '.strtoupper($sort));
-        return view('newspapers', compact('newspapers', 'sort'));
+        $type = "Koran";
+        $fields = array(
+            "Name",
+            "Publication Date",
+            "Publisher",
+            "Language"
+        );
+        $location = "newspapers";
+        $datas = DB::select('select * from newspapers order by name '.strtoupper($sort));
+        return view('display', compact('datas', 'sort', 'type', 'fields', 'location'));
     }
 
     /**

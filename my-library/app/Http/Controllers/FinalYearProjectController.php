@@ -16,8 +16,17 @@ class FinalYearProjectController extends Controller
         if (strtolower($sort) != "desc") {
             $sort = "asc";
         }
-        $finalYearProjects = DB::select('select * from final_year_projects order by title '.strtoupper($sort));
-        return view('fyps', compact('finalYearProjects', 'sort'));
+        $type = "FYP";
+        $fields = array(
+            "Title",
+            "Student Name",
+            "Supervisor",
+            "Submission Year",
+            "Abstract"
+        );
+        $location = "final_year_projects";
+        $datas = DB::select('select * from final_year_projects order by title '.strtoupper($sort));
+        return view('display', compact('datas', 'sort', 'type', 'fields', 'location'));
     }
 
     /**

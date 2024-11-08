@@ -16,55 +16,16 @@ class JournalsController extends Controller
         if(strtolower($sort) != "desc"){
             $sort = "asc";
         }
-        $journals = DB::select('select * from journals order by judul '.strtoupper($sort));
-        return view('journal', compact('journals', 'sort'));
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(Journals $journals)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Journals $journals)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, Journals $journals)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Journals $journals)
-    {
-        //
+        $type = "Jurnal";
+        $fields = array(
+            "Judul",
+            "Penerbit",
+            "Penulis",
+            "Tahun Terbit",
+            "ISBN"
+        );
+        $location = "journals";
+        $datas = DB::select('select * from journals order by judul '.strtoupper($sort));
+        return view('display', compact('datas', 'sort', 'type', 'fields', 'location'));
     }
 }

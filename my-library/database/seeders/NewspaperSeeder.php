@@ -17,6 +17,8 @@ class NewspaperSeeder extends Seeder
                 'publication_date' => $faker->date,
                 'publisher' => $faker->company,
                 'language' => $faker->languageCode,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now(),
             ]);
         }
     }

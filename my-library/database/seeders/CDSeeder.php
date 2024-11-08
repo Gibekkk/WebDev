@@ -21,6 +21,8 @@ class CDSeeder extends Seeder
                 'publisher' => $faker->company,
                 'release_year' => $faker->year,
                 'genre' => $faker->word,
+                'created_at' => \Carbon\Carbon::now(),
+                'updated_at' => \Carbon\Carbon::now(),
             ]);
         }
     }
